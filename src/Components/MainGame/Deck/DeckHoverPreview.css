@@ -1,0 +1,68 @@
+.deck-hover-preview {
+    position: absolute;
+    bottom: calc(100% + 14px);
+    right: -8px;
+    background-color: #2e3a3c;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 8px;
+    z-index: 10000;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+
+.deck-hover-preview table {
+    border-collapse: separate;
+    border-spacing: 3px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.deck-hover-preview th,
+.deck-hover-preview td {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    background-color: #4a575a;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.deck-hover-preview .rank-totals td {
+    background-color: #1f2829;
+    color: #e0e0e0;
+    font-size: 12px;
+}
+
+.deck-hover-preview .suit-row td {
+    color: #fff;
+}
+
+.deck-hover-preview .suit-row td.zero {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.deck-hover-preview .suit-row.spades td:not(.suit-total):not(.zero) { background-color: #4d3c8a; }
+.deck-hover-preview .suit-row.hearts td:not(.suit-total):not(.zero) { background-color: #b73a3a; }
+.deck-hover-preview .suit-row.clubs td:not(.suit-total):not(.zero) { background-color: #2a6fb5; }
+.deck-hover-preview .suit-row.diamonds td:not(.suit-total):not(.zero) { background-color: #c98a2c; }
+
+.deck-hover-preview .suit-icon-cell {
+    background-color: #c9d1d3;
+}
+
+.deck-hover-preview .suit-total {
+    background-color: #1f2829;
+    color: #fff;
+    min-width: 32px;
+}
+
+.deck-hover-preview .suit-icon {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.deck-hover-preview .suit-icon.spades { color: #2e2e2e; }
+.deck-hover-preview .suit-icon.hearts { color: #c0392b; }
+.deck-hover-preview .suit-icon.clubs { color: #1f5e9b; }
+.deck-hover-preview .suit-icon.diamonds { color: #b8841e; }
