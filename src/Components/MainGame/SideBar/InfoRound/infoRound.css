@@ -141,3 +141,33 @@
     color: #f68a00;
     text-shadow: 4px 4px black;
 }
+
+/* Responsive: reduce font sizes on narrow viewports so labels no se cortan */
+@media (max-width: 1300px) {
+    .hands-discards>.hands,
+    .hands-discards>.discards { font-size: 18px; }
+    .hands-discards>.hands>div,
+    .hands-discards>.discards>div { font-size: 28px; padding: 0 12px; }
+    .ante-round .ante,
+    .ante-round .round { font-size: 22px; }
+    .ante-round>.ante>div,
+    .ante-round>.round>span { font-size: 30px; padding: 0 12px; }
+    .ante-round>.ante span { font-size: 30px; }
+    .dollars>div { font-size: 42px; }
+    .run-info, .options { font-size: 22px; }
+}
+
+@media (max-width: 1000px) {
+    .hands-discards>.hands,
+    .hands-discards>.discards { font-size: 14px; }
+    .hands-discards>.hands>div,
+    .hands-discards>.discards>div { font-size: 22px; padding: 0 8px; }
+    .ante-round .ante,
+    .ante-round .round { font-size: 16px; }
+    .ante-round>.ante>div,
+    .ante-round>.round>span { font-size: 22px; padding: 0 8px; }
+    .ante-round>.ante span { font-size: 22px; }
+    .dollars>div { font-size: 30px; }
+    .run-info, .options { font-size: 16px; }
+    .info-round { height: 220px; }
+}

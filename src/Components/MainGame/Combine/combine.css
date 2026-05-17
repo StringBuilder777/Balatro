@@ -50,4 +50,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    min-width: 0;
+}
+
+/* Responsive — reduce padding y altura del area de jokers en pantallas pequeñas */
+@media (max-width: 1300px) {
+    .joker-consumable { height: 160px; }
+    .playing-area { padding: 20px; }
+}
+
+@media (max-width: 1000px) {
+    .joker-consumable { height: 120px; }
+    .playing-area { padding: 12px; }
+    .combine { padding: 0 1.5%; }
+}
+
+@media (max-width: 800px) {
+    .joker-consumable { height: 90px; }
+    .inner-side-bar { padding: 3vh 4px 2vh; }
 }

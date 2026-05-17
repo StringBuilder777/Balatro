@@ -4,6 +4,21 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 1400px) {
+    .card-draw { transform: scale(0.85); }
+}
+@media (max-width: 1150px) {
+    .card-draw { transform: scale(0.7); }
+}
+@media (max-width: 950px) {
+    .card-draw { transform: scale(0.55); }
+}
+@media (max-width: 750px) {
+    .card-draw { transform: scale(0.42); }
 }
 
 .card-draw-container {

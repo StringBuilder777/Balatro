@@ -1,6 +1,20 @@
 .played-card{
     flex-basis: 40%;
-    opacity: 0.3hg;
     /* background-color: rgb(179, 179, 179); */
     position: relative;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+}
+
+@media (max-width: 1400px) {
+    .played-card { transform: scale(0.85); }
+}
+@media (max-width: 1150px) {
+    .played-card { transform: scale(0.7); }
+}
+@media (max-width: 950px) {
+    .played-card { transform: scale(0.55); }
+}
+@media (max-width: 750px) {
+    .played-card { transform: scale(0.42); }
 }
